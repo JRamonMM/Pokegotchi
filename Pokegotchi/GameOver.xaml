@@ -1,0 +1,23 @@
+﻿<Window x:Name="gameover" x:Class="Pokegotchi.GameOver"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pokegotchi"
+        mc:Ignorable="d"
+        Title="GameOver" Height="597" Width="800" ResizeMode="NoResize">
+    <Grid x:Name="gameOverGrid" Background="Black">
+        <Label x:Name="label" Content="Tu Pikachu ha muerto..." HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Red" FontSize="72" FontFamily="Chiller" Width="521" Margin="134,10,0,0"/>
+        <Label x:Name="lblDormir" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="457" Height="317" Margin="163,108,0,0" BorderBrush="Black">
+            <Label.Background>
+                <ImageBrush ImageSource="Recursos/Imagenes/rip.jpg"/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="lblTerminar" Content="" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="249,0,0,10" Width="313" Height="103" BorderBrush="#FFFF8000" MouseEnter="destacarBordes" MouseLeave="ocultarBordes" MouseDown="terminar">
+            <Label.Background>
+                <ImageBrush ImageSource="Recursos/Imagenes/btnTerminar.png"/>
+            </Label.Background>
+        </Label>
+
+    </Grid>
+</Window>

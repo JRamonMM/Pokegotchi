@@ -1,0 +1,27 @@
+﻿<Window x:Name="raichu" x:Class="Pokegotchi.Raichu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pokegotchi"
+        mc:Ignorable="d"
+        Title="Raichu" Height="600" Width="800" ResizeMode="NoResize">
+    <Grid x:Name="raichuGrid">
+        <Grid.Background>
+            <ImageBrush ImageSource="Recursos/Imagenes/paisaje1.jpg"/>
+        </Grid.Background>
+        <Label x:Name="lbl1" Content="¡Has Ganado! Tu Pikachu" HorizontalAlignment="Left" Height="88" Margin="51,10,0,0" VerticalAlignment="Top" Width="700" FontSize="60" FontFamily="Forte" Foreground="#FFF5ED36"/>
+        <Label x:Name="lbl2" Content="ha evolucionado a Raichu" Height="72" Margin="52,85,59,0" VerticalAlignment="Top" FontSize="60" FontFamily="Forte" Foreground="#FFF5ED36"/>
+        <Label x:Name="lblDormir" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="328" Height="353" Margin="88,208,0,0" BorderBrush="Black">
+            <Label.Background>
+                <ImageBrush ImageSource="Recursos/Imagenes/raichu.png"/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="lblTerminar" Content="" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="453,0,0,18" Width="313" Height="103" BorderBrush="#FFFF8000" MouseEnter="destacarBordes" MouseLeave="ocultarBordes" MouseDown="terminar">
+            <Label.Background>
+                <ImageBrush ImageSource="Recursos/Imagenes/btnTerminar.png"/>
+            </Label.Background>
+        </Label>
+
+    </Grid>
+</Window>
